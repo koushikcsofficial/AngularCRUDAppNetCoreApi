@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "DnklT25Hrqbz4ATzFzPESHjH5sUJm+QzfWTpQK64wBfupLh3ZVMobEdtwMvhvtat1dX3ov56VJi/wI1vs/xizg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\koush\\source\\repos\\AngularCRUDAppNetCoreApi\\Customer.Models\\Customer.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\koush\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

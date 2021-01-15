@@ -1,0 +1,85 @@
+<form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="CustomerId" [value]="detailService.formData.customerId"/>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>First Name</label>
+                <input minlength="3"
+                    class="form-control form-control-lg"
+                    placeholder="First Name" 
+                    name="CustomerFirstName" 
+                    #CustomerFirstName="ngModel" 
+                    [(ngModel)]="detailService.formData.customerFirstName"
+                    required
+                    [class.invalid]="CustomerFirstName.invalid && CustomerFirstName.touched"/>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Last Name</label>
+                <input minlength="3"
+                    class="form-control form-control-lg" 
+                    placeholder="Last Name" 
+                    name="CustomerLastName" 
+                    #CustomerLastName="ngModel" 
+                    [(ngModel)]="detailService.formData.customerLastName"
+                    required
+                    [class.invalid]="CustomerLastName.invalid && CustomerLastName.touched"/>
+                </div>
+            </div>
+        </div>
+            <div class="form-group">
+                <label>Address</label>
+                <input 
+                    class="form-control form-control-lg" 
+                    placeholder="Full address" 
+                    name="customerAddress" 
+                    #customerAddress="ngModel" 
+                    [(ngModel)]="detailService.formData.customerAddress"
+                    required
+                    [class.invalid]="customerAddress.invalid && customerAddress.touched"/>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Pincode</label>
+                        <input type="text" maxlength="6" minlength="6"
+                            class="form-control form-control-lg" 
+                            placeholder="6 digit pincode" 
+                            name="CustomerPostalCode" 
+                            #CustomerPostalCode="ngModel" 
+                            [(ngModel)]="detailService.formData.customerPostalCode"
+                            required
+                            [class.invalid]="CustomerPostalCode.invalid && CustomerPostalCode.touched"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Mobile</label>
+                        <input type="text" maxlength="10" minlength="10"
+                            class="form-control form-control-lg" 
+                            placeholder="10 digit mobile number" 
+                            name="CustomerMobileNumber" 
+                            #CustomerMobileNumber="ngModel" 
+                            [(ngModel)]="detailService.formData.customerMobileNumber"
+                            required
+                            [class.invalid]="CustomerMobileNumber.invalid && CustomerMobileNumber.touched"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email"
+                    class="form-control form-control-lg" 
+                    placeholder="Email Address" 
+                    name="Customeraddress" 
+                    #CustomerEmail="ngModel" 
+                    [(ngModel)]="detailService.formData.customerEmail"
+                    required
+                    [class.invalid]="CustomerEmail.invalid && CustomerEmail.touched"/>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-info btn-lg btn-block" [disabled]="form.invalid">Submit</button>
+            </div>
+
+</form>

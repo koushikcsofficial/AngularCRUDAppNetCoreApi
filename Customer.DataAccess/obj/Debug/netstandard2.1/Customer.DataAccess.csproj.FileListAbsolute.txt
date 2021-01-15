@@ -1,0 +1,12 @@
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\bin\Debug\netstandard2.1\Customer.DataAccess.deps.json
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\bin\Debug\netstandard2.1\Customer.DataAccess.dll
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\bin\Debug\netstandard2.1\Customer.DataAccess.pdb
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\bin\Debug\netstandard2.1\Customer.Models.dll
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\bin\Debug\netstandard2.1\Customer.Models.pdb
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\obj\Debug\netstandard2.1\Customer.DataAccess.csprojAssemblyReference.cache
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\obj\Debug\netstandard2.1\Customer.DataAccess.AssemblyInfoInputs.cache
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\obj\Debug\netstandard2.1\Customer.DataAccess.AssemblyInfo.cs
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\obj\Debug\netstandard2.1\Customer.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\obj\Debug\netstandard2.1\Customer.DataAccess.csproj.CopyComplete
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\obj\Debug\netstandard2.1\Customer.DataAccess.dll
+C:\Users\koush\source\repos\Customer\Customer.DataAccess\obj\Debug\netstandard2.1\Customer.DataAccess.pdb

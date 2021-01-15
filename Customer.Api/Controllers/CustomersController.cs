@@ -96,14 +96,16 @@ namespace Customer.Api.Controllers
 
         //Exception Testing
 
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet]
+        public string GetException(int id,string name)
         {
             string word = "test";
             if (word.Length > 0)
             {
                 //throw new AppException("My Custom Exception");
             }
+            int t = 5;
+            var t1 = t /( t - t);
             return word;
         }
         [HttpGet]

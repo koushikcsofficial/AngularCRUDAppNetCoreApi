@@ -25,7 +25,7 @@ namespace Customer.Api.Controllers
             var context = HttpContext.Features.Get<IExceptionHandlerFeature>();
 
             return Problem(
-                detail: context.Error.StackTrace,
+                //detail: context.Error.StackTrace,
                 title: context.Error.Message);
         }
 

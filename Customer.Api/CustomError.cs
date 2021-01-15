@@ -9,14 +9,14 @@ namespace Customer.Api
     {
         public CustomError(int statusCode, string message)
         {
-            StatusCode = statusCode;
-            Message = message;
+            status = statusCode;
+            title = message;
         }
         public CustomError()
         {
 
         }
-        public int StatusCode { get; set; }
-        public string Message { get; set; }
+        public int status { get; set; }
+        public string title { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System;
 using System.Net;
@@ -9,10 +10,12 @@ namespace ExceptionTesing.Api
     public class ExceptionHandlerMiddleware
     {
         private readonly RequestDelegate _next;
+        private readonly ILog logger;
 
-        public ExceptionHandlerMiddleware(RequestDelegate next)
+        public ExceptionHandlerMiddleware(RequestDelegate next, ILog logger)
         {
             _next = next;
+            this.logger = logger;
         }
 
         public async Task Invoke(HttpContext context)
@@ -23,22 +26,23 @@ namespace ExceptionTesing.Api
             }
             catch (Exception ex)
             {
-                await HandleExceptionMessageAsync(context, ex).ConfigureAwait(false);
+                await HandleExceptionMessageAsync(context, ex, logger).ConfigureAwait(false);
             }
         }
 
-        private static Task HandleExceptionMessageAsync(HttpContext context, Exception exception)
+        private static Task HandleExceptionMessageAsync(HttpContext context, Exception exception, ILog logger)
         {
             context.Response.ContentType = "application/json";
             //int statusCode = (int)HttpStatusCode.InternalServerError;
             int statusCode = context.Response.StatusCode;
             var result = JsonConvert.SerializeObject(new
             {
-                StatusCode = statusCode,
-                ErrorMessage = exception.Message
+                statusCode = statusCode,
+                errorMessage = exception.Message
             });
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = statusCode;
+            logger.Error(exception.ToString());
             return context.Response.WriteAsync(result);
         }
     }

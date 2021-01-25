@@ -35,7 +35,7 @@ namespace Customer.Api
                         var result = new CustomError();
                         if (!context.ModelState.IsValid)
                         {
-                            result = new CustomError(501,"Invalid Model");
+                            result = new CustomError(400,"Invalid Model");
                         }
                         else
                         {
@@ -44,7 +44,7 @@ namespace Customer.Api
                         }
                         return new JsonResult(result);
                     };
-                }); ;
+                }); 
 
             //services.AddMvc(options =>
             //{

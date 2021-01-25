@@ -15,11 +15,21 @@ namespace ExceptionTesing.Api.Controllers
         public string Get()
         {
             int t = 5;
+            var mm = t.ToString().Split(',')[1];
             var t1 = t / (t - t);
             return t1.ToString();
         }
-        [HttpGet("{id,name}")]
-        public string GetException(int id, string name)
+
+        [HttpGet("{word}")]
+        public string GetNull(string word)
+        {
+            string name = null;
+            //name = null;
+            return name;
+        }
+
+        [HttpGet("{id}")]
+        public string GetException(int id)
         {
             string word = "test";
             if (word.Length > 0)
@@ -28,7 +38,7 @@ namespace ExceptionTesing.Api.Controllers
             }
             int t = id;
             var t1 = t / (t - t);
-            return word+name;
+            return word;
         }
         [HttpGet]
         public IEnumerable<string> GetExample()

@@ -1,10 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "qjkpcGDIUrvDsbyPR/cdFJSD2J0Fu+qolbnW7++Ba/vXGGCms2uue3nxAm6x2+JSbBcKHfJwKCSdbUwDvwaLpg==",
+  "dgSpecHash": "NVtvEeMWd3DYylQMQ6d64KEIAu48mdZit0XVv7Rzu4DUCvnApwknOqNn++i8lss5vGYl6x25PtV8d8Z65Nf6ew==",
   "success": true,
   "projectFilePath": "C:\\Users\\koush\\source\\repos\\AngularCRUDAppNetCoreApi\\ExceptionTesing.Api\\ExceptionTesing.Api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\koush\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\koush\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\nlog\\4.7.6\\nlog.4.7.6.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\nlog.extensions.logging\\1.7.0\\nlog.extensions.logging.1.7.0.nupkg.sha512",
+    "C:\\Users\\koush\\.nuget\\packages\\nlog.web.aspnetcore\\4.10.0\\nlog.web.aspnetcore.4.10.0.nupkg.sha512"
   ],
   "logs": []
 }

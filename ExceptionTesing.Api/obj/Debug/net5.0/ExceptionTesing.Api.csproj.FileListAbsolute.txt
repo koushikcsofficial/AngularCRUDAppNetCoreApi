@@ -1,3 +1,4 @@
+C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\bin\Debug\net5.0\nlog.config
 C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\bin\Debug\net5.0\appsettings.json
 C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\bin\Debug\net5.0\ExceptionTesing.Api.exe
@@ -8,6 +9,10 @@ C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\bin\Deb
 C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\bin\Debug\net5.0\ref\ExceptionTesing.Api.dll
 C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\bin\Debug\net5.0\ExceptionTesing.Api.pdb
 C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\bin\Debug\net5.0\NLog.dll
+C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
+C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\obj\Debug\net5.0\ExceptionTesing.Api.csprojAssemblyReference.cache
 C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\obj\Debug\net5.0\ExceptionTesing.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\obj\Debug\net5.0\ExceptionTesing.Api.AssemblyInfoInputs.cache
 C:\Users\koush\source\repos\AngularCRUDAppNetCoreApi\ExceptionTesing.Api\obj\Debug\net5.0\ExceptionTesing.Api.AssemblyInfo.cs

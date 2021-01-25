@@ -1,22 +1,20 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.IO;
+using NLog;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ExceptionTesing.Api
 {
     public class Startup
     {
+        private readonly ILog logger;
         public Startup(IConfiguration configuration)
         {
+            LogManager.LoadConfiguration(System.String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             Configuration = configuration;
         }
 
@@ -25,8 +23,28 @@ namespace ExceptionTesing.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddControllers();
+            services.AddControllers(options =>
+                options.Filters.Add(new HttpResponseExceptionFilter()))
+                .ConfigureApiBehaviorOptions(options =>
+                {
+                    options.InvalidModelStateResponseFactory = context =>
+                    {
+                        var result = new CustomError();
+                        if (!context.ModelState.IsValid)
+                        {
+                            result = new CustomError(context.HttpContext.Response.StatusCode, "Invalid parameters supplied for action");
+                        }
+                        else
+                        {
+                            //result = new BadRequestObjectResult(context.ModelState);
+                            result = new CustomError(context.HttpContext.Response.StatusCode, "Internal server error");
+                        }
+                        logger.Error(context.HttpContext.ToString());
+                        return new JsonResult(result);
+                    };
+                });
+            //Singleton class service added for writing exception log
+            services.AddSingleton<ILog, LogNLog>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

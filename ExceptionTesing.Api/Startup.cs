@@ -32,14 +32,15 @@ namespace ExceptionTesing.Api
                         var result = new CustomError();
                         if (!context.ModelState.IsValid)
                         {
-                            result = new CustomError(context.HttpContext.Response.StatusCode, "Invalid parameters supplied for action");
+                            result = new CustomError(context.HttpContext.Response.StatusCode, "Invalid parameters supplied");
                         }
                         else
                         {
-                            //result = new BadRequestObjectResult(context.ModelState);
                             result = new CustomError(context.HttpContext.Response.StatusCode, "Internal server error");
                         }
+
                         logger.Error(context.HttpContext.ToString());
+
                         return new JsonResult(result);
                     };
                 });
